@@ -69,7 +69,7 @@ $total = 0;
                                     <td><?php echo $f['costo_parcial'] ?></td>
                                 </tr>
                                 <?php
-                                $total = $total + $row['costo_parcial'];
+                                $total = $total + $f['costo_parcial'];
                             }
                             $sel->close();
                             $con->close();
@@ -84,7 +84,7 @@ $total = 0;
                     ?>
                 </div>
                 <div class="h2">
-                    <p> <a href="seleccionar_refaccion_marca.php" class="btn btn-primary" role="button">A&ntilde;adir m&aacute;s refacciones</a></p>
+                    <p> <a href="cotizacion_seleccionar_refaccion_marca.php" class="btn btn-primary" role="button">A&ntilde;adir m&aacute;s refacciones</a></p>
                     <p> <a href="cotizacion_imprimir.php" target="_blank" class="btn btn-info" role="button">Imprimir esta cotizaci&oacute;n</a></p>
                     <p> <a href="cotizacion_guardar.php" class="btn btn-success" role="button">Guardar esta cotizaci&oacute;n</a></p>
                     <p> <a href="cotizacion_eliminar.php" class="btn btn-danger" role="button">Eliminar esta cotizaci&oacute;n</a></p>
